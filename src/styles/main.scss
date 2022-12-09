@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  @screen sm {
+    .banner {
+      background-image: linear-gradient(
+        to bottom,
+        rgb(98, 183, 212) 75%,
+        white 35%
+      );
+    }
+  }
+  .banner {
+    background-color: rgb(98, 183, 212);
+  }
+}
+
+@layer base {
+  body {
+    @apply font-sans;
+  }
+}
